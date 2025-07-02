@@ -1,0 +1,91 @@
+{
+  "SIBIRPUNK": {
+    "Actor": "Character",
+    "Sheet": "Character sheet",
+    "Health": {
+      "Label": "Health",
+      "Hint": "FLEX + FIT + 5",
+      "Injury": {
+        "Roulette": "Roulette",
+        "Heavy": "Wounded +2 diff",
+        "Light": "Injured +1 diff",
+        "Healthy": "Healthy"
+      }
+    },
+    "Defense": {
+      "Label": "Defense",
+      "Protection": "Protection (max 3)"
+    },
+    "Conditions": {
+      "Fatigue": "Fatigue",
+      "Addiction": "Addiction",
+      "Disease": "Disease",
+      "Poison": "Radiation/Poison"
+    },
+    "Psyche": {
+      "Label": "Psyche",
+      "Hint": "Ego + 5"
+    },
+    "Spark": {
+      "Label": "Spark",
+      "Hint": "Ego + 2"
+    },
+    "AvatarPlaceholder": "Character avatar",
+    "Attributes":{
+      "Label": "Attributes",
+      "Brainz": "Brainz",
+      "Ego": "Ego",
+      "Mass": "Flex",
+      "Strength": "Strength",
+      "Dexterity": "Fit",
+      "Accuracy": "Aim"
+    },
+    "Skills": {
+      "Label": "Skills",
+      "Larceny": "Larceny",
+      "Deft": "Deft",
+      "Ranged": "Ranged",
+      "Loot": "Loot",
+      "Wheelz": "Wheelz",
+      "Talk": "Talk",
+      "Style": "Style",
+      "Snap": "Snap",
+      "Wits": "Wits",
+      "Grasp": "Grasp",
+      "Nerd": "Nerd",
+      "Doc": "Doc",
+      "Tech": "Tech",
+      "Coder": "Coder",
+      "Hoehand": "Hoehand",
+      "Brawl": "Brawl",
+      "Cardio": "Cardio",
+      "Stamina": "Stamina"
+    },
+    "GeneralInfo": {
+      "Label": "General",
+      "Residence": "Residence",
+      "Gender": "Gender",
+      "Age": "Age",
+      "Origin": "Origin",
+      "4A": "Allocation",
+      "Backstory": "Backstory",
+      "Trait": "Trait",
+      "Merits": "Merits",
+      "Flaws": "Flaws"
+    },
+    "Status": {
+      "Label": "Status",
+      "Conditions": "Conditions",
+      "Relationships": "Relationships"
+    },
+    "Other": {
+      "Label": "Equipment and points",
+      "Equipment": "Equipment",
+      "Profession": "Profession points",
+      "Free": "Free points",
+      "Load": "Load",
+      "Capacity": "Capacity",
+      "Wallet": "Wallet"
+    }
+  }
+}

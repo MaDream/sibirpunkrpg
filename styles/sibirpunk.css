@@ -1,0 +1,339 @@
+/*
+ All sheet
+ */
+body .sheet-container {
+  color: #eee;
+  font-family: 'Arial', sans-serif;
+  padding: 5px;
+}
+.sheet-container h2 {
+  color: #b1ad8a;
+  text-transform: uppercase;
+  font-family: 'Arial Black', sans-serif;
+  border-bottom: 1px solid #444;
+}
+
+/*
+ Header
+ */
+.character-header {
+  background: #b1ad8a;
+  border: 2px solid #222;
+  border-radius: 8px;
+  /*
+  width: 440px;
+  margin: 30px auto;
+  */
+  padding: 8px 6px 12px 6px;
+  box-shadow: 0 2px 8px #b1ad8a;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 100%;
+  gap: 10px;
+}
+
+.avatar-container {
+  flex: 0 0 35%;
+  max-width: 35%;
+}
+
+.health-defense-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex: 0 0 100%;
+  max-width: 100%;
+  font-size: 1em;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.health-title-container > label {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.health-title-container > i {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.health-title-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: flex-start;
+}
+.defense-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: flex-end;
+}
+.defense-label {
+  display: flex;
+  font-size: 1em;
+  align-items: center;
+  font-weight: 600;
+}
+
+.resource-hint {
+  display: flex;
+  margin-left: 10px;
+}
+
+.cond-radio:checked + .cond-label {
+  background: #444;
+}
+
+.health-labels {
+  display: flex;
+  justify-content: flex-start;
+  gap: 5px;
+  font-size: 8px;
+  color: #333;
+  margin-bottom: 13px;
+  margin-left: 0;
+}
+
+.resource-value.health {
+  background: white;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.health-labels .roulette-hint { margin-left: 12px; }
+.health-labels .heavy-injury-hint { width: 54px; margin-left: 12px; }
+.health-labels .light-injury-hint { width: 50px; margin-left: 8px; }
+.health-labels .healthy-hint { margin-left: 6px; }
+.health-labels > span {
+  text-align: left;
+}
+
+.health-labels .healthy { width: 209px; }
+.state-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1px;
+}
+
+.state-label-block {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: bold;
+  font-size: 1.04em;
+}
+
+.resources-container {
+  flex: 0 0 65%;
+  max-width: 65%;
+  padding-right: 10px;
+  color: black;
+  font-family: 'Arial Black', sans-serif;
+  text-transform: uppercase;
+}
+
+.resource-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.resource-title {
+  flex: 0 0 25%;
+  max-width: 25%;
+  height: 24px;
+
+  background: black;
+  color: white;
+
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+
+  clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
+  z-index: 2;
+}
+
+.resource-title > label {
+  margin-left: 5px;
+  font-family: 'Arial Black', sans-serif;
+  text-transform: uppercase;
+}
+
+.resource-fancy {
+  flex: 0 0 95%;
+  max-width: 95%;
+
+  background: white;
+  color: black;
+
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+
+  margin-left: -20%;
+  z-index: 1;
+}
+
+.resource-value.psyche,
+.resource-value.spark {
+  margin-left: 25%;
+}
+
+.sheet-title {
+  font-size: 2em;
+  font-weight: 900;
+  letter-spacing: 1px;
+  font-family: 'Oswald', Arial, sans-serif;
+  margin-bottom: 10px;
+}
+
+.cond-label {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #222;
+  border-radius: 4px;
+  background: #f3f3f3;
+  margin-left: 4px;
+  cursor: pointer;
+  vertical-align: middle;
+  transition: background 0.13s;
+}
+
+.state-right {
+  font-weight: bold;
+  font-size: 1.04em;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.resource-hint {
+  display: flex;
+  align-self: center;
+  font-size: 0.64em;
+  color: #888;
+  margin-bottom: 3px;
+}
+
+/*
+ Tabs
+ */
+nav.sheet-tabs.tabs .item {
+  color: #959575;
+  --color-shadow-primary: #b1ad8a;
+  --color-shadow-highlight: #ebebeb;
+}
+nav.sheet-tabs {
+  background: #2D2D2DD3;
+  text-transform: uppercase;
+  font-family: 'Arial Black', sans-serif;
+  color: #e6dccb;
+  font-size: 16px;
+  margin-bottom: 20px;
+  height: 41px;
+  padding: 0;
+  display: flex;
+}
+.sheet-body .tab {
+  background: #b1ad8a;
+  border: 2px solid #222;
+  border-radius: 8px;
+  padding: 8px 6px 12px 6px;
+  box-shadow: 0 2px 8px #b1ad8a;
+}
+
+/*
+ Tabs content
+ */
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+.flex-row.attribute > i {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: black;
+}
+.flex-row.attribute > label {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.flex-row.attribute-row > div {
+  width: 50%;
+}
+.attribute-group {
+  margin-bottom: 20px;
+}
+.mtop {
+  margin-top: 10px;
+}
+.mleft {
+  margin-left: 10px;
+}
+
+.attribute-label {
+  color: black;
+  font-family: 'Arial Black', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+
+}
+.sub-attribute-input {
+  width: 25px !important;
+  color: dimgray;
+  background: white;
+}
+
+.resource-container.skill {
+  margin-bottom: 3px;
+}
+.resource-container.skill .resource-title {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.resource-fancy.skill {
+  flex: 0 0 51%;
+  max-width: 51%;
+}
+.resource-fancy.skill .resource-value {
+  margin-left: 25%;
+  text-align: center;
+}
+
+.cell label {
+  text-transform: uppercase;
+  font-family: 'Arial Black', sans-serif;
+  color: #000000;
+  font-size: 0.9rem;
+}
+
+input, textarea {
+  background: #222;
+  color: #eee;
+  border: 1px solid #555;
+  border-radius: 4px;
+  padding: 0.4rem;
+}
+
+.divider {
+  margin: 13px 0 10px 0;
+  border-bottom: 1.5px solid #bbb;
+}
+
+
+
+
+

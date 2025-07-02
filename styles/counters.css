@@ -1,0 +1,114 @@
+.resource-value {
+    align-self: flex-end;
+}
+
+.resource-value .resource-value-step {
+    height: 14px;
+    width: 14px;
+    border: 1px solid #000;
+    display: inline-block;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.resource-value-static .resource-value-static-step {
+    height: 14px;
+    width: 14px;
+    border: 1px solid #000;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.resource-value .resource-value-empty {
+    height: 14px;
+    width: 14px;
+    border: 1px solid #000;
+    display: inline-block;
+    border-radius: 50%;
+    cursor: pointer;
+    background: linear-gradient(
+            45deg,
+            transparent 0%,
+            transparent 43%,
+            black 45%,
+            black 55%,
+            transparent 57%,
+            transparent 100%
+    ),
+    linear-gradient(
+            135deg,
+            transparent 0%,
+            transparent 43%,
+            black 45%,
+            black 55%,
+            transparent 57%,
+            transparent 100%
+    );
+}
+
+.resource-counter-step {
+    height: 14px;
+    width: 14px;
+    border: 1px solid #000;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    font-size: 8px;
+    margin-bottom: 5px;
+    background: white;
+    font-weight: 600;
+    color: dimgray;
+}
+.resource-counter-step .active {
+    background: dimgray;
+    color: white;
+}
+.resource-counter-step-roulette {
+    height: 14px;
+    width: 50px;
+    border: 1px solid #000;
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 8px;
+    font-size: 8px;
+    font-weight: 600;
+    color: dimgray;
+    margin-bottom: 5px;
+}
+.resource-counter-step-roulette .active{
+    color: white;
+    background: dimgray;
+}
+.resource-counter-step.attribute {
+    height: 25px;
+    width: 25px;
+    background: white;
+    color: #8a8a8a;
+    font-weight: 600;
+    text-align: center;
+    font-size: 20px;
+}
+.resource-counter-step.attribute .active {
+    background: #8a8a8a;
+    color: white;
+    text-align: center;
+}
+
+.cell-resource-counter-step {
+    height: 14px;
+    width: 14px;
+    border: 1px solid #000;
+    display: inline-block;
+    cursor: pointer;
+}
+
+
+
+.resource-value.health .resource-counter-step:nth-child(4),
+.resource-value.health .resource-counter-step:nth-child(7) {
+    margin-right: 6px;
+}
+
+.resource-value.health .resource-counter-step:last-child {
+    margin-right: 0;
+}

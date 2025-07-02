@@ -1,0 +1,32 @@
+{
+  "id": "sibirpunk",
+  "title": "SibirPunk RPG",
+  "description": "SibirPunk RPG system for Foundry VTT",
+  "version": "0.0.1",
+  "compatibility": {
+    "minimum": "11*",
+    "verified": "13.334",
+    "maximum": ""
+  },
+  "authors": [
+    {
+      "name": "DayDream",
+      "url": "https://github.com/MaDream",
+      "discord": "_daydream"
+    }
+  ],
+  "esmodules": ["system/main.js"],
+  "styles": ["styles/sibirpunk.css", "styles/counters.css"],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    },
+    {
+      "lang": "ru",
+      "name": "Russian",
+      "path": "lang/ru.json"
+    }
+  ]
+}

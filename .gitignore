@@ -1,0 +1,41 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor folders
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Foundry-specific (если ты разработчик модуля или мира)
+dist/
+build/
+packs/*.db~
+packs/*.lock
+packs/_source/
+
+# Сборочные артефакты
+*.zip
+*.tar.gz
+
+# Logs
+logs/
+*.log
+
+# Environment files
+.env
+.env.*
+
+# Optional: если используешь TypeScript
+*.tsbuildinfo
+
+# Optional: локальные конфиги
+local.json
+config.local.*

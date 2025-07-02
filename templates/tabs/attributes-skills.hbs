@@ -1,0 +1,326 @@
+<div class="tab flex-center" data-group="primary" data-tab="stats">
+
+    <div class="flex-row attribute-row">
+        <!-- BRAINZ -->
+        <div class="attribute-group">
+            <div class="flex-column">
+                <div class="flex-row">
+                    <div class="resource-value">
+                        {{#numLoop 6}}
+                            <span class="resource-counter-step attribute" data-index="{{data.attributes.brainz.value}}">{{realAttributeValue}}</span>
+                        {{/numLoop}}
+                    </div>
+                </div>
+
+                <!--<input type="number" name="data.attributes.brainz" value="{{data.attributes.brainz.value}}"/>-->
+                <div class="flex-row attribute">
+                    <i class="fas fa-minus resource-control resource-minus" data-resource="brainz" data-action="minus"></i>
+                    <label class="attribute-label">{{localize "SIBIRPUNK.Attributes.Brainz"}}</label>
+                    <i class="fas fa-plus resource-control resource-plus" data-resource="brainz" data-action="plus"></i>
+                </div>
+            </div>
+            <div class="flex-column mtop">
+                <div class="resource-container skill">
+                    <div class="resource-title">
+                        <label>{{localize "SIBIRPUNK.Skills.Wits"}}</label>
+                    </div>
+                    <div class="resource-fancy skill">
+                        <div class="resource-value">
+                            {{#numLoop 3}}
+                                <span class="resource-counter-step" data-index="{{this}}" data-state=""></span>
+                            {{/numLoop}}
+                        </div>
+                    </div>
+                </div>
+                <div class="resource-container skill">
+                    <div class="resource-title">
+                        <label>{{localize "SIBIRPUNK.Skills.Grasp"}}</label>
+                    </div>
+                    <div class="resource-fancy skill">
+                        <div class="resource-value">
+                            {{#numLoop 3}}
+                                <span class="resource-counter-step" data-index="{{this}}" data-state=""></span>
+                            {{/numLoop}}
+                        </div>
+                    </div>
+                </div>
+                <div class="resource-container skill">
+                    <div class="resource-title">
+                        <label>{{localize "SIBIRPUNK.Skills.Nerd"}}</label>
+                    </div>
+                    <div class="resource-fancy skill">
+                        <div class="resource-value">
+                            {{#numLoop 3}}
+                                <span class="resource-counter-step" data-index="{{this}}" data-state=""></span>
+                            {{/numLoop}}
+                        </div>
+                    </div>
+                </div>
+                <div class="resource-container skill">
+                    <div class="resource-title">
+                        <label>{{localize "SIBIRPUNK.Skills.Doc"}}</label>
+                    </div>
+                    <div class="resource-fancy skill">
+                        <div class="resource-value">
+                            {{#numLoop 3}}
+                                <span class="resource-counter-step" data-index="{{this}}" data-state=""></span>
+                            {{/numLoop}}
+                        </div>
+                    </div>
+                </div>
+                <div class="resource-container skill">
+                    <div class="resource-title">
+                        <label>{{localize "SIBIRPUNK.Skills.Tech"}}</label>
+                    </div>
+                    <div class="resource-fancy skill">
+                        <div class="resource-value">
+                            {{#numLoop 3}}
+                                <span class="resource-counter-step" data-index="{{this}}" data-state=""></span>
+                            {{/numLoop}}
+                        </div>
+                    </div>
+                </div>
+                <div class="resource-container skill">
+                    <div class="resource-title">
+                        <label>{{localize "SIBIRPUNK.Skills.Coder"}}</label>
+                    </div>
+                    <div class="resource-fancy skill">
+                        <div class="resource-value">
+                            {{#numLoop 3}}
+                                <span class="resource-counter-step" data-index="{{this}}" data-state=""></span>
+                            {{/numLoop}}
+                        </div>
+                    </div>
+                </div>
+                <div class="resource-container skill">
+                    <div class="resource-title">
+                        <label>{{localize "SIBIRPUNK.Skills.Hoehand"}}</label>
+                    </div>
+                    <div class="resource-fancy skill">
+                        <div class="resource-value">
+                            {{#numLoop 3}}
+                                <span class="resource-counter-step" data-index="{{this}}" data-state=""></span>
+                            {{/numLoop}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- FIT -->
+        <div class="attribute-group">
+            <div class="flex-row">
+                <div class="flex-column">
+                    <div class="flex-row">
+                        <div class="resource-value">
+                            {{#numLoop 6}}
+                                <span class="resource-counter-step attribute" data-index="{{data.attributes.fit.value}}">{{realAttributeValue}}</span>
+                            {{/numLoop}}
+                        </div>
+                    </div>
+                    <!--<input type="number" name="data.attributes.fit" value="{{data.attributes.fit.value}}"/> -->
+                    <div class="flex-row attribute">
+
+                    </div>
+                    <div class="flex-row attribute">
+                        <i class="fas fa-minus resource-control resource-minus" data-resource="fit" data-action="minus"></i>
+                        <label class="attribute-label">{{localize "SIBIRPUNK.Attributes.Dexterity"}}</label>
+                        <i class="fas fa-plus resource-control resource-plus" data-resource="fit" data-action="plus"></i>
+                    </div>
+                </div>
+                <div class="flex-column mleft">
+                    <input type="number" class="sub-attribute-input" name="data.attributes.aim" value="{{data.attributes.fit.subAttribute.value}}" disabled="disabled"/>
+                    <label class="attribute-label">{{localize "SIBIRPUNK.Attributes.Accuracy"}}</label>
+                </div>
+            </div>
+            <div class="flex-column mtop">
+                <div class="resource-container skill">
+                    <div class="resource-title">
+                        <label>{{localize "SIBIRPUNK.Skills.Larceny"}}</label>
+                    </div>
+                    <div class="resource-fancy skill">
+                        <div class="resource-value">
+                            {{#numLoop 3}}
+                                <span class="resource-counter-step" data-index="{{this}}" data-state=""></span>
+                            {{/numLoop}}
+                        </div>
+                    </div>
+                </div>
+                <div class="resource-container skill">
+                    <div class="resource-title">
+                        <label>{{localize "SIBIRPUNK.Skills.Deft"}}</label>
+                    </div>
+                    <div class="resource-fancy skill">
+                        <div class="resource-value">
+                            {{#numLoop 3}}
+                                <span class="resource-counter-step" data-index="{{this}}" data-state=""></span>
+                            {{/numLoop}}
+                        </div>
+                    </div>
+                </div>
+                <div class="resource-container skill">
+                    <div class="resource-title">
+                        <label>{{localize "SIBIRPUNK.Skills.Ranged"}}</label>
+                    </div>
+                    <div class="resource-fancy skill">
+                        <div class="resource-value">
+                            {{#numLoop 3}}
+                                <span class="resource-counter-step" data-index="{{this}}" data-state=""></span>
+                            {{/numLoop}}
+                        </div>
+                    </div>
+                </div>
+                <div class="resource-container skill">
+                    <div class="resource-title">
+                        <label>{{localize "SIBIRPUNK.Skills.Loot"}}</label>
+                    </div>
+                    <div class="resource-fancy skill">
+                        <div class="resource-value">
+                            {{#numLoop 3}}
+                                <span class="resource-counter-step" data-index="{{this}}" data-state=""></span>
+                            {{/numLoop}}
+                        </div>
+                    </div>
+                </div>
+                <div class="resource-container skill">
+                    <div class="resource-title">
+                        <label>{{localize "SIBIRPUNK.Skills.Wheelz"}}</label>
+                    </div>
+                    <div class="resource-fancy skill">
+                        <div class="resource-value">
+                            {{#numLoop 3}}
+                                <span class="resource-counter-step" data-index="{{this}}" data-state=""></span>
+                            {{/numLoop}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="flex-row attribute-row">
+        <!-- EGO -->
+        <div class="attribute-group">
+            <div class="flex-column">
+                <div class="flex-row">
+                    <div class="resource-value">
+                        {{#numLoop 6}}
+                            <span class="resource-counter-step attribute" data-index="{{data.attributes.ego.value}}">{{realAttributeValue}}</span>
+                        {{/numLoop}}
+                    </div>
+                </div>
+                <!--<input type="number" name="data.attributes.ego" value="{{data.attributes.ego.value}}"/>-->
+                <div class="flex-row attribute">
+                    <i class="fas fa-minus resource-control resource-minus" data-resource="ego" data-action="minus"></i>
+                    <label class="attribute-label">{{localize "SIBIRPUNK.Attributes.Ego"}}</label>
+                    <i class="fas fa-plus resource-control resource-plus" data-resource="ego" data-action="plus"></i>
+                </div>
+            </div>
+            <div class="flex-column mtop">
+                <div class="resource-container skill">
+                    <div class="resource-title">
+                        <label>{{localize "SIBIRPUNK.Skills.Talk"}}</label>
+                    </div>
+                    <div class="resource-fancy skill">
+                        <div class="resource-value">
+                            {{#numLoop 3}}
+                                <span class="resource-counter-step" data-index="{{this}}" data-state=""></span>
+                            {{/numLoop}}
+                        </div>
+                    </div>
+                </div>
+                <div class="resource-container skill">
+                    <div class="resource-title">
+                        <label>{{localize "SIBIRPUNK.Skills.Style"}}</label>
+                    </div>
+                    <div class="resource-fancy skill">
+                        <div class="resource-value">
+                            {{#numLoop 3}}
+                                <span class="resource-counter-step" data-index="{{this}}" data-state=""></span>
+                            {{/numLoop}}
+                        </div>
+                    </div>
+                </div>
+                <div class="resource-container skill">
+                    <div class="resource-title">
+                        <label>{{localize "SIBIRPUNK.Skills.Snap"}}</label>
+                    </div>
+                    <div class="resource-fancy skill">
+                        <div class="resource-value">
+                            {{#numLoop 3}}
+                                <span class="resource-counter-step" data-index="{{this}}" data-state=""></span>
+                            {{/numLoop}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- FLEX -->
+        <div class="attribute-group">
+            <div class="flex-row">
+                <div class="flex-column">
+                    <div class="flex-row">
+                        <div class="resource-value">
+                            {{#numLoop 6}}
+                                <span class="resource-counter-step attribute" data-index="{{data.attributes.flex.value}}">{{realAttributeValue}}</span>
+                            {{/numLoop}}
+                        </div>
+                    </div>
+
+                    <!--<input type="number" name="data.attributes.flex" value="{{data.attributes.flex.value}}"/>-->
+                    <div class="flex-row attribute">
+                        <i class="fas fa-minus resource-control resource-minus" data-resource="mass" data-action="minus"></i>
+                        <label class="attribute-label">{{localize "SIBIRPUNK.Attributes.Mass"}}</label>
+                        <i class="fas fa-plus resource-control resource-plus" data-resource="mass" data-action="plus"></i>
+                    </div>
+                </div>
+                <div class="flex-column mleft">
+                    <input type="number" class="sub-attribute-input" name="data.attributes.strength" value="{{data.attributes.strength.subAttribute.value}}" disabled="disabled"/>
+                    <label class="attribute-label">{{localize "SIBIRPUNK.Attributes.Strength"}}</label>
+                </div>
+            </div>
+            <div class="flex-column mtop">
+                <div class="resource-container skill">
+                    <div class="resource-title">
+                        <label>{{localize "SIBIRPUNK.Skills.Brawl"}}</label>
+                    </div>
+                    <div class="resource-fancy skill">
+                        <div class="resource-value">
+                            {{#numLoop 3}}
+                                <span class="resource-counter-step" data-index="{{this}}" data-state=""></span>
+                            {{/numLoop}}
+                        </div>
+                    </div>
+                </div>
+                <div class="resource-container skill">
+                    <div class="resource-title">
+                        <label>{{localize "SIBIRPUNK.Skills.Cardio"}}</label>
+                    </div>
+                    <div class="resource-fancy skill">
+                        <div class="resource-value">
+                            {{#numLoop 3}}
+                                <span class="resource-counter-step" data-index="{{this}}" data-state=""></span>
+                            {{/numLoop}}
+                        </div>
+                    </div>
+                </div>
+                <div class="resource-container skill">
+                    <div class="resource-title">
+                        <label>{{localize "SIBIRPUNK.Skills.Stamina"}}</label>
+                    </div>
+                    <div class="resource-fancy skill">
+                        <div class="resource-value">
+                            {{#numLoop 3}}
+                                <span class="resource-counter-step" data-index="{{this}}" data-state=""></span>
+                            {{/numLoop}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

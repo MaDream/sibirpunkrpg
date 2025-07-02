@@ -1,0 +1,110 @@
+{
+  "Actor": {
+    "types": ["character"],
+    "character": {
+      "system": {
+        "locked": true,
+        "resources": {
+          "health": { "value": 7, "max": 18 },
+          "psyche": { "value": 1, "max": 15 },
+          "spark": { "value": 1, "max": 15 },
+          "afflictions": {
+            "sick": false,
+            "addicted": false,
+            "poisoned": false,
+            "weakened": false
+          }
+        },
+        "attributes": {
+          "brainz": {
+            "value": 1
+          },
+          "ego": {
+            "value": 1
+          },
+          "flex": {
+            "value": 1,
+            "subAttribute": {
+              "label": "strength",
+              "value": 0
+            }
+          },
+          "fit": {
+            "value": 1,
+            "subAttribute": {
+              "label": "aim",
+              "value": 0
+            }
+          }
+        },
+        "defense": {
+          "value": 0
+        },
+        "skills": {
+          "larceny": { "label": "Проныра", "value": 0 },
+          "deft": { "label": "Маневр", "value": 0 },
+          "ranged": { "label": "Стрельба", "value": 0 },
+          "loot": { "label": "Воровство", "value": 0 },
+          "wheelz": { "label": "Вождение", "value": 0 },
+          "talk": { "label": "Болтовня", "value": 0 },
+          "style": { "label": "Стойкость", "value": 0 },
+          "snap": { "label": "Брань", "value": 0 },
+          "wits": { "label": "Чувство", "value": 0 },
+          "grasp": { "label": "Размышления", "value": 0 },
+          "nerd": { "label": "Зубрила", "value": 0 },
+          "doc": { "label": "Доктор", "value": 0 },
+          "tech": { "label": "Инженер", "value": 0 },
+          "coder": { "label": "Кодер", "value": 0 },
+          "hoehand": { "label": "Оператор", "value": 0 },
+          "brawl": { "label": "Бой", "value": 0 },
+          "cardio": { "label": "Кардио", "value": 0 },
+          "stamina": { "label": "Устойчивость", "value": 0 }
+        },
+        "details": {
+          "residence": "",
+          "gender": "",
+          "age": 0,
+          "origin": "",
+          "allocation": "",
+          "backstory": "",
+          "trait": "",
+          "advantages": "",
+          "disadvantages": ""
+        },
+        "status": {
+          "conditions": "",
+          "relationships": ""
+        },
+        "inventory": {
+          "equipment": ""
+        },
+        "other": {
+          "profession": 0,
+          "free": 0,
+          "load": 0,
+          "capacity": 0,
+          "wallet": 0
+        }
+      }
+    }
+
+  },
+  "Item": {
+    "types": ["augmentation", "feature", "weapon"],
+    "htmlFields": ["description"],
+    "templates": {
+      "base": {
+        "description": ""
+      }
+    },
+    "augmentation": {
+      "templates": ["base"]
+    },
+    "feature": {
+      "templates": ["base"]
+    },
+    "weapon": {
+      "templates": ["base"]
+    }
+  }
+}

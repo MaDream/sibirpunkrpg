@@ -1,0 +1,101 @@
+<header class="sheet-block">
+    <!-- <label class="character-name">{{actor.name}}</label> -->
+    <div class="character-header">
+        <!-- Avatar -->
+        <div class="avatar-container">
+            {{> "systems/sibirpunk/templates/parts/profile-img.hbs"}}
+        </div>
+
+        <div class="resources-container">
+            <div class="health-defense-container">
+                <div class="health-title-container">
+                    <i class="fas fa-minus resource-control resource-minus" data-resource="health" data-action="minus"></i>
+                    <label>{{localize "SIBIRPUNK.Health.Label"}}</label>
+                    <i class="fas fa-plus resource-control resource-plus" data-resource="health" data-action="plus"></i>
+                </div>
+                <div class="defense-container">
+                    <label class="defense-label">{{localize "SIBIRPUNK.Defense.Label"}}</label>
+                    <input type="number" class="sub-attribute-input mleft" name="data.defense.value" value="{{data.defense.value}}" disabled="disabled"/>
+                </div>
+            </div>
+
+            <div class="resource-hint">({{localize "SIBIRPUNK.Health.Hint"}})</div>
+            <div class="health-container">
+                <div class="resource-value health">
+                    {{#numLoop 19}}
+                        {{#if (eq realResourceValue 0)}}
+                            <span class="resource-counter-step-roulette active" data-index="{{this}}">0</span>
+                        {{else}}
+                            {{#ifgteq data.health.value realResourceValue}}
+                                <span class="resource-counter-step active" data-index="{{this}}">{{realResourceValue}}</span>
+                            {{else}}
+                                <span class="resource-counter-step" data-index="{{this}}">{{realResourceValue}}</span>
+                            {{/ifgteq}}
+                        {{/if}}
+                    {{/numLoop}}
+                </div>
+                <div class="health-labels">
+                    <span class="roulette-hint">{{localize "SIBIRPUNK.Health.Injury.Roulette"}}</span>
+                    <span class="heavy-injury-hint">{{localize "SIBIRPUNK.Health.Injury.Heavy"}}</span>
+                    <span class="light-injury-hint">{{localize "SIBIRPUNK.Health.Injury.Light"}}</span>
+                    <span class="healthy-hint">{{localize "SIBIRPUNK.Health.Injury.Healthy"}}</span>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="state-row">
+                <span class="state-label-block">
+                    <input type="checkbox" class="cond-radio" id="cond1" name="cond1">
+                    <label>{{localize "SIBIRPUNK.Conditions.Fatigue"}}</label>
+                </span>
+                <span class="state-right">
+                    <label>{{localize "SIBIRPUNK.Conditions.Addiction"}}</label>
+                    <input type="checkbox" class="cond-radio" id="cond2" name="cond2">
+                </span>
+            </div>
+            <div class="state-row">
+                <span class="state-label-block">
+                    <input type="checkbox" class="cond-radio" id="cond3" name="cond3">
+                    <label>{{localize "SIBIRPUNK.Conditions.Disease"}}</label>
+                </span>
+                <span class="state-right">
+                    <label>{{localize "SIBIRPUNK.Conditions.Poison"}}</label>
+                    <input type="checkbox" class="cond-radio" id="cond4" name="cond4">
+                </span>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="resource-hint">({{localize "SIBIRPUNK.Psyche.Hint"}})</div>
+            <div class="resource-container">
+                <div class="resource-title">
+                    <label>{{localize "SIBIRPUNK.Psyche.Label"}}</label>
+                </div>
+                <div class="resource-fancy">
+                    <div class="resource-value psyche">
+                        {{#numLoop 15}}
+                            <span class="resource-counter-step" data-index="{{this}}" data-state="">{{realResourceValue}}</span>
+                        {{/numLoop}}
+                    </div>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="resource-hint">({{localize "SIBIRPUNK.Spark.Hint"}})</div>
+            <div class="resource-container">
+                <div class="resource-title">
+                    <label>{{localize "SIBIRPUNK.Spark.Label"}}</label>
+                </div>
+                <div class="resource-fancy">
+                    <div class="resource-value spark">
+                        {{#numLoop 15}}
+                            <span class="resource-counter-step" data-index="{{this}}" data-state="">{{sparkValue}}</span>
+                        {{/numLoop}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

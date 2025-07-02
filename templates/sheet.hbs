@@ -1,0 +1,18 @@
+{{!-- SibirPunk Character Sheet for FoundryVTT --}}
+<form class="{{cssClass}} {{#if locked}}locked{{/if}}" autocomplete="off">
+    <div class="sheet-container">
+        {{> "systems/sibirpunk/templates/parts/header.hbs"}}
+        <nav class="sheet-tabs tabs" data-group="primary">
+            <div class="item" data-tab="stats">{{localize "SIBIRPUNK.Attributes.Label"}}</div>
+            <div class="item" data-tab="general">{{localize "SIBIRPUNK.GeneralInfo.Label"}}</div>
+            <div class="item" data-tab="status">{{localize "SIBIRPUNK.Status.Label"}}</div>
+            <div class="item" data-tab="other">{{localize "SIBIRPUNK.Other.Label"}}</div>
+        </nav>
+        <section class="sheet-body">
+            {{> "systems/sibirpunk/templates/tabs/attributes-skills.hbs"}}
+            {{> "systems/sibirpunk/templates/tabs/general-info.hbs"}}
+            {{> "systems/sibirpunk/templates/tabs/status.hbs"}}
+            {{> "systems/sibirpunk/templates/tabs/other.hbs"}}
+        </section>
+    </div>
+</form>
